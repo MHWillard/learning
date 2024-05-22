@@ -1,4 +1,5 @@
-﻿const axios = require('axios');
+﻿import {expect} from 'chai';
+import * as axios from 'axios';
 
 async function getItem(id) {
     try {
@@ -30,9 +31,19 @@ async function getItem(id) {
 
 
             // Call the function and assert the response
-            await expect(fetchData()).resolves.toEqual(checkData);
+            await expect(fetchData()).to.equal(checkData);
 
             // Assert that Axios.get was called with the correct URL
             expect(axios.get).toHaveBeenCalledWith('https://localhost:7053/api/items/66420e99000165ce4146b799');
         });
     });
+
+    /*
+var assert = require('assert');
+describe('Array', function () {
+  describe('#indexOf()', function () {
+    it('should return -1 when the value is not present', function () {
+      assert.equal([1, 2, 3].indexOf(4), -1);
+    });
+  });
+});*/
