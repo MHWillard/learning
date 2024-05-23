@@ -10,6 +10,19 @@ namespace WeaponStoreAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            //add CORS for testing.
+            var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  policy =>
+                                  {
+                                      policy.WithOrigins("https://localhost:7053/",
+                                                          "http://localhost:3000");
+                                  });
+            });
+
             // Add services to the container.
 
             builder.Services.AddControllers();
@@ -33,6 +46,8 @@ namespace WeaponStoreAPI
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 

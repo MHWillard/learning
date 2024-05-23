@@ -3,7 +3,8 @@ import * as axios from 'axios';
 
 async function getItem(id) {
     try {
-        const response = await axios.get(`/api/items/${id}`);
+        const url = "/api/items/" + id;
+        const response = await axios.get(url);
         console.log(response);
         return response;
     } catch (error) {
