@@ -1,23 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+import ItemTable from './ItemTable';
+
 import React, { useEffect } from 'react';
-import axios from 'axios';
 
 function App() {
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('https://localhost:7053/api/items/66420e99000165ce4146b799');
-        console.log(response.data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []); // Empty dependency array ensures this effect runs once after initial render
 
   return (
     <div className="App">
@@ -35,6 +23,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <ItemTable />
     </div>
   );
 }
