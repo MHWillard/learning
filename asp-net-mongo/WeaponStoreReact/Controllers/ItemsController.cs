@@ -32,6 +32,29 @@ namespace WeaponStoreAPI.Controllers
             return item;
         }
 
+        [HttpGet("allitems")]
+        public async Task<ActionResult<List<Item>>> GetAll()
+        {
+            var items = await _itemsService.GetAsync();
+
+            //make list of Item
+            //get all item from _itemsService.GetAsync();
+            //if list is null: return notFound
+            //otherwise return list
+            /*
+                     public async Task<List<Item>> GetAsync() =>
+        await _itemsCollection.Find(_ => true).ToListAsync();  
+            
+             */
+
+            if (items is null)
+            {
+                return NotFound();
+            }
+
+            return items;
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post(Item newItem)
         {
