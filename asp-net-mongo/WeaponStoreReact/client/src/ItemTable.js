@@ -20,16 +20,31 @@ function ItemTable() {
       }, []); // Empty dependency array ensures this effect runs once after initial render
 
       const itemTable = allItem.map(item =>
-        <div key={item.id}>
-          <p>{item.id}</p>
-          <p>NAME: {item.name} CATEGORY: {item.category} DAMAGE: {item.damage}</p>
-          <p>PRICE: {item.price}</p>
-        </div>
+        <tr key={item.id}>
+          <th>{item.id}</th>
+          <th>{item.name}</th>
+          <th>{item.category}</th> 
+          <th>{item.damage}</th>
+          <th>{item.price}</th>
+        </tr>
       )
 
     return (
-        <div>
+        <div class="container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Damage</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
             {itemTable}
+            </tbody>
+          </table>
         </div>
     );
 }
