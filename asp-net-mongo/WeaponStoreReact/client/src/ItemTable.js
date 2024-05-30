@@ -30,8 +30,8 @@ function ItemTable() {
       )
 
     return (
-        <div class="container">
-          <table class="table">
+        <div class="container is-max-widescreen">
+          <table class="table is-fullwidth">
             <thead>
               <tr>
                 <th>ID</th>
