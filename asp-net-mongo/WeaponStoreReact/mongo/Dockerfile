@@ -2,8 +2,7 @@
 FROM mongodb/mongodb-community-server:latest
 
 WORKDIR /app
-RUN mkdir -p /app/ItemsData
-COPY ./ItemsData /app/ItemsData
+COPY . /app/
 
 # Expose the default MongoDB port
 EXPOSE 27017
