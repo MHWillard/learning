@@ -5,7 +5,7 @@ services:
     image: mongodb/mongodb-community-server:latest
     volumes:
       - itemsdata:/data/db
-      - ./scripts:/docker-entrypoint-initdb.d
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     ports:
       - "27017:27017"
     environment:
