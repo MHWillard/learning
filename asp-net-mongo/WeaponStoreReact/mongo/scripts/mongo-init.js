@@ -1,3 +1,7 @@
+var username = 'root';
+var password = 'secret';
+var database = 'admin';
+
 // mongo-init.js
 db = db.getSiblingDB('ItemsData');
 

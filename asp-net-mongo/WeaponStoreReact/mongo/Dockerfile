@@ -3,6 +3,7 @@ FROM mongodb/mongodb-community-server:latest
 
 WORKDIR /app
 COPY . /app/
+COPY init.js /docker-entrypoint-initdb.d 
 
 # Expose the default MongoDB port
 EXPOSE 27017
