@@ -8,7 +8,7 @@ function ItemTable() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('https://localhost:7053/api/Items/allitems/');
+            const response = await axios.get('https://localhost:7053/api/Items/allitems/'); //.net backend
             console.log(response.data);
             setAllItem(response.data);
           } catch (error) {
