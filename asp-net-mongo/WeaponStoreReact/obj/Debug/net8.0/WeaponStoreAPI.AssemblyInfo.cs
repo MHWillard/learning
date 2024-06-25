@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeaponStoreAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25a9ae684f0a43e462088a276ef7d34440d76925")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1908edc880237e4c6b55cc63d0cfd76546cffa91")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeaponStoreAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeaponStoreAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
