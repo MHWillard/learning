@@ -19,10 +19,10 @@ namespace WeaponStoreAPI.Controllers
         public async Task<List<Item>> Get() =>
             await _itemsService.GetAsync();
 
-        [HttpGet("{id:length(24)}")]
-        public async Task<ActionResult<Item>> Get(string id)
+        [HttpGet("{item_id:length(24)}")]
+        public async Task<ActionResult<Item>> Get(string item_id)
         {
-            var item = await _itemsService.GetAsync(id);
+            var item = await _itemsService.GetAsync(item_id);
 
             if (item is null)
             {
@@ -63,10 +63,10 @@ namespace WeaponStoreAPI.Controllers
             return CreatedAtAction(nameof(Get), new { id = newItem.Id }, newItem);
         }
 
-        [HttpPut("{id:length(24)}")]
-        public async Task<IActionResult> Update(string id, Item updatedItem)
+        [HttpPut("{item_id:length(24)}")]
+        public async Task<IActionResult> Update(string item_id, Item updatedItem)
         {
-            var item = await _itemsService.GetAsync(id);
+            var item = await _itemsService.GetAsync(item_id);
 
             if (item is null)
             {
@@ -75,22 +75,22 @@ namespace WeaponStoreAPI.Controllers
 
             updatedItem.Id = item.Id;
 
-            await _itemsService.UpdateAsync(id, updatedItem);
+            await _itemsService.UpdateAsync(item_id, updatedItem);
 
             return NoContent();
         }
 
-        [HttpDelete("{id:length(24)}")]
-        public async Task<IActionResult> Delete(string id)
+        [HttpDelete("{item_id:length(24)}")]
+        public async Task<IActionResult> Delete(string item_id)
         {
-            var item = await _itemsService.GetAsync(id);
+            var item = await _itemsService.GetAsync(item_id);
 
             if (item is null)
             {
                 return NotFound();
             }
 
-            await _itemsService.RemoveAsync(id);
+            await _itemsService.RemoveAsync(item_id);
 
             return NoContent();
         }

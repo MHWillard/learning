@@ -92,3 +92,7 @@ C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\obj\Debug\net8.0\refint\W
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\obj\Debug\net8.0\WeaponStoreAPI.pdb
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\obj\Debug\net8.0\WeaponStoreAPI.genruntimeconfig.cache
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\obj\Debug\net8.0\ref\WeaponStoreAPI.dll
+C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\Tests\obj\project.assets.json
+C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\Tests\obj\Tests.csproj.nuget.dgspec.json
+C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\nunit.framework.dll
+C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\nunit.framework.legacy.dll
