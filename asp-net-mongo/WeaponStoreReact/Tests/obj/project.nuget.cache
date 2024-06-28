@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "4vRDXY0Y7GP9Wa8Nh18eRW490XD97dkmeAp1L8ZrEsTCUhc3Fl8bev7EFoJeDVS/G2LX4z8SQk15xkfrO5WKgA==",
-  "success": false,
+  "dgSpecHash": "3lZRXJw61lhboBfRPSrap8A+7u39EKaXd3UyuK5jfQhoYFUQaTEbeBOm4cfCq4Njvz+oo/23gam5nAMhF9IKGA==",
+  "success": true,
   "projectFilePath": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mwillard\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
@@ -21,10 +22,9 @@
     "C:\\Users\\mwillard\\.nuget\\packages\\mongodb.driver\\2.25.0\\mongodb.driver.2.25.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\mongodb.driver.core\\2.25.0\\mongodb.driver.core.2.25.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.2\\mongodb.libmongocrypt.1.8.2.nupkg.sha512",
-    "C:\\Users\\mwillard\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
-    "C:\\Users\\mwillard\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
@@ -34,22 +34,21 @@
     "C:\\Users\\mwillard\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\xunit\\2.8.1\\xunit.2.8.1.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\xunit.analyzers\\1.14.0\\xunit.analyzers.1.14.0.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\xunit.assert\\2.8.1\\xunit.assert.2.8.1.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\xunit.core\\2.8.1\\xunit.core.2.8.1.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\xunit.extensibility.core\\2.8.1\\xunit.extensibility.core.2.8.1.nupkg.sha512",
+    "C:\\Users\\mwillard\\.nuget\\packages\\xunit.extensibility.execution\\2.8.1\\xunit.extensibility.execution.2.8.1.nupkg.sha512",
     "C:\\Users\\mwillard\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: NUnit from 4.1.0 to 3.13.3. Reference the package directly from the project to select a different version. \r\n Tests -> WeaponStoreAPI -> NUnit (>= 4.1.0) \r\n Tests -> NUnit (>= 3.13.3)",
-      "libraryId": "NUnit",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
