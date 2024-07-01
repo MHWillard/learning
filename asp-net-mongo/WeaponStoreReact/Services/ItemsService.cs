@@ -45,8 +45,8 @@ namespace WeaponStoreAPI.Services
         public async Task<List<Item>> GetAsync() =>
         await _itemsCollection.Find(_ => true).ToListAsync();
 
-        public async Task<Item?> GetAsync(string id) =>
-        await _itemsCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+        public async Task<Item?> GetAsync(string item_id) =>
+        await _itemsCollection.Find(x => x.Item_id == item_id).FirstOrDefaultAsync();
 
         public async Task CreateAsync(Item newItem) =>
         await _itemsCollection.InsertOneAsync(newItem);

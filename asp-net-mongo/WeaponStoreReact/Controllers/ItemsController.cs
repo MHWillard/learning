@@ -19,6 +19,7 @@ namespace WeaponStoreAPI.Controllers
         public async Task<List<Item>> Get() =>
             await _itemsService.GetAsync();
 
+        /*
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<Item>> Get(string id)
         {
@@ -31,6 +32,21 @@ namespace WeaponStoreAPI.Controllers
 
             return item;
         }
+        */
+
+        [HttpGet("{item_id}")]
+        public async Task<ActionResult<Item>> Get(string item_id)
+        {
+            var item = await _itemsService.GetAsync(item_id);
+
+            if (item is null)
+            {
+                return NotFound();
+            }
+
+            return item;
+        }
+
 
         [HttpGet("allitems")]
         public async Task<ActionResult<List<Item>>> GetAll()
