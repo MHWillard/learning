@@ -33,6 +33,7 @@ namespace WeaponStoreAPI.Controllers
             return item;
         }
         
+        /*
         
         [HttpGet("{item_id}")]
         public async Task<ActionResult<Item>> Get(string item_id)
@@ -47,6 +48,7 @@ namespace WeaponStoreAPI.Controllers
             Console.WriteLine($"Query result: {item?.ToString() ?? "null"}");
             return item;
         }
+        */
         
 
 
