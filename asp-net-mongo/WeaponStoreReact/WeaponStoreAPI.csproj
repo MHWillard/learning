@@ -8,9 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="client\**" />
+    <Compile Remove="mongo\**" />
     <Compile Remove="Tests\**" />
+    <Content Remove="client\**" />
+    <Content Remove="mongo\**" />
     <Content Remove="Tests\**" />
+    <EmbeddedResource Remove="client\**" />
+    <EmbeddedResource Remove="mongo\**" />
     <EmbeddedResource Remove="Tests\**" />
+    <None Remove="client\**" />
+    <None Remove="mongo\**" />
     <None Remove="Tests\**" />
   </ItemGroup>
 
