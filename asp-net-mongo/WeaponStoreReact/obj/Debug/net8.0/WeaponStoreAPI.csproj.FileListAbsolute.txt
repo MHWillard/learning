@@ -45,9 +45,6 @@ C:\Work\Coding\learning\asp-net-mongo\WeaponStoreAPI\obj\Debug\net8.0\WeaponStor
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreAPI\obj\Debug\net8.0\ref\WeaponStoreAPI.dll
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\appsettings.Development.json
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\appsettings.json
-C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\client\package-lock.json
-C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\client\package.json
-C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\client\public\manifest.json
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\WeaponStoreAPI.exe
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\WeaponStoreAPI.deps.json
 C:\Work\Coding\learning\asp-net-mongo\WeaponStoreReact\bin\Debug\net8.0\WeaponStoreAPI.runtimeconfig.json

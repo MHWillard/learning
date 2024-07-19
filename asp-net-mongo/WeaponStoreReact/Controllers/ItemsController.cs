@@ -53,9 +53,10 @@ namespace WeaponStoreAPI.Controllers
 
 
         [HttpGet("allitems")]
+        //public async Task<ActionResult<List<Item>>> GetAll()
         public async Task<ActionResult<List<Item>>> GetAll()
         {
-            var items = await _itemsService.GetAsync();
+            //var items = await _itemsService.GetAsync();
 
             //make list of Item
             //get all item from _itemsService.GetAsync();
@@ -65,14 +66,15 @@ namespace WeaponStoreAPI.Controllers
                      public async Task<List<Item>> GetAsync() =>
         await _itemsCollection.Find(_ => true).ToListAsync();  
             
-             */
+             
 
             if (items is null)
             {
                 return NotFound();
             }
 
-            return items;
+            return items;*/
+            return await _itemsService.GetAsync();
         }
 
         [HttpPost]

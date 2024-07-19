@@ -2,6 +2,7 @@
 
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MongoDB.Bson;
 using WeaponStoreAPI.Models;
 
 namespace WeaponStoreAPI.Services
@@ -20,10 +21,21 @@ namespace WeaponStoreAPI.Services
                  "ConnectionString": "mongodb://localhost:27017",
     "DatabaseName": "ItemStore",
     "ItemsCollectionName": "Items"
-             */
+             
             var mClient = new MongoClient("mongodb://localhost:27017");
             var mDatabase = mClient.GetDatabase("ItemStore");
             _itemsCollection = mDatabase.GetCollection<Item>("Items");
+            */
+            var mClient = new MongoClient("mongodb+srv://mhwillard:9IsvJkAKxKnGJW1k@cluster0.k1mwy5p.mongodb.net/");
+            var mDatabase = mClient.GetDatabase("ItemsStore");
+            _itemsCollection = mDatabase.GetCollection<Item>("Items");
+
+            List<string> databases = mClient.ListDatabaseNames().ToList();
+
+            foreach (string database in databases)
+            {
+                Console.WriteLine(database);
+            }
         }
 
         public ItemsService()
@@ -35,15 +47,35 @@ namespace WeaponStoreAPI.Services
                  "ConnectionString": "mongodb://localhost:27017",
     "DatabaseName": "ItemStore",
     "ItemsCollectionName": "Items"
-             */
+
             var mClient = new MongoClient("mongodb://localhost:27017");
             var mDatabase = mClient.GetDatabase("ItemStore");
             _itemsCollection = mDatabase.GetCollection<Item>("Items");
+            */
+            var mClient = new MongoClient("mongodb+srv://mhwillard:9IsvJkAKxKnGJW1k@cluster0.k1mwy5p.mongodb.net/");
+            var mDatabase = mClient.GetDatabase("ItemsStore");
+            _itemsCollection = mDatabase.GetCollection<Item>("Items");
+
+            List<string> databases = mClient.ListDatabaseNames().ToList();
+
+            foreach (string database in databases)
+            {
+                Console.WriteLine(database);
+            }
         }
 
         //CRUD operations.
-        public async Task<List<Item>> GetAsync() =>
-        await _itemsCollection.Find(_ => true).ToListAsync();
+        //public async Task<List<Item>> GetAsync() =>
+        //await _itemsCollection.Find(_ => true).ToListAsync();
+
+        public async Task<List<Item>> GetAsync()
+        {
+            var itemsList = await _itemsCollection.Find(new BsonDocument()).ToListAsync();
+            return itemsList;
+        }
+
+        //public async Task<Item?> GetAsync(string id) =>
+        //await _itemsCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
         public async Task<Item?> GetAsync(string id) =>
         await _itemsCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
