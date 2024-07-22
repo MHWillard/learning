@@ -6,7 +6,7 @@ namespace WeaponStoreAPI.Controllers
 {
     //set the controller and the main route
     [ApiController]
-    [Route("/api/[controller]")]
+    [Route("/api/")]
     public class ItemsController : ControllerBase
     {
         private readonly ItemsService _itemsService;

@@ -55,13 +55,6 @@ namespace WeaponStoreAPI.Services
             var mClient = new MongoClient("mongodb+srv://mhwillard:9IsvJkAKxKnGJW1k@cluster0.k1mwy5p.mongodb.net/");
             var mDatabase = mClient.GetDatabase("ItemsStore");
             _itemsCollection = mDatabase.GetCollection<Item>("Items");
-
-            List<string> databases = mClient.ListDatabaseNames().ToList();
-
-            foreach (string database in databases)
-            {
-                Console.WriteLine(database);
-            }
         }
 
         //CRUD operations.
