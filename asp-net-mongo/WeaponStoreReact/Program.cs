@@ -21,7 +21,8 @@ namespace WeaponStoreAPI
                                   policy =>
                                   {
                                       policy.WithOrigins("https://localhost:7053/",
-                                                          "http://localhost:3000");
+                                                          "http://localhost:3000",
+                                                          "http://20.62.157.250");
                                   });
             });
 
