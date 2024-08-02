@@ -26,7 +26,8 @@ namespace WeaponStoreAPI.Services
             var mDatabase = mClient.GetDatabase("ItemStore");
             _itemsCollection = mDatabase.GetCollection<Item>("Items");
             */
-            var mClient = new MongoClient("mongodb+srv://mhwillard:9IsvJkAKxKnGJW1k@cluster0.k1mwy5p.mongodb.net/");
+            var mClient = new MongoClient("mongodb+srv://warlord_user:xYxiz4ALjWFoYjdN@cluster0.k1mwy5p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+            //mongodb+srv://mhwillard:<password>@cluster0.k1mwy5p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
             var mDatabase = mClient.GetDatabase("ItemsStore");
             _itemsCollection = mDatabase.GetCollection<Item>("Items");
 
@@ -52,7 +53,7 @@ namespace WeaponStoreAPI.Services
             var mDatabase = mClient.GetDatabase("ItemStore");
             _itemsCollection = mDatabase.GetCollection<Item>("Items");
             */
-            var mClient = new MongoClient("mongodb+srv://mhwillard:9IsvJkAKxKnGJW1k@cluster0.k1mwy5p.mongodb.net/");
+            var mClient = new MongoClient("mongodb+srv://warlord_user:xYxiz4ALjWFoYjdN@cluster0.k1mwy5p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
             var mDatabase = mClient.GetDatabase("ItemsStore");
             _itemsCollection = mDatabase.GetCollection<Item>("Items");
         }
