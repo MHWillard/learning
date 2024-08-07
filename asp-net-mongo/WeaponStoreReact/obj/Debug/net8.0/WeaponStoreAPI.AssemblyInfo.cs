@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("dd83d0c2-9319-421d-9988-bee900a91ff7")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeaponStoreAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13173bb92ba05da1c29033051057be317ab0fce6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cdffb339c8e46659d64ae159920343d66cd8a40")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeaponStoreAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeaponStoreAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

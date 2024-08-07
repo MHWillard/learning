@@ -11,6 +11,8 @@ namespace WeaponStoreAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            var mongoConnect = builder.Configuration["ItemStoreDatabase:ConnectionString"];
+            Console.WriteLine(mongoConnect);
 
             //add CORS for testing.
             var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -34,8 +36,7 @@ namespace WeaponStoreAPI
             builder.Services.AddSwaggerGen();
 
             //add the database services to the builder, get the config and add that too.
-            builder.Services.Configure<ItemStoreDatabaseSettings>(
-                builder.Configuration.GetSection("ItemStoreDatabase"));
+            builder.Services.Configure<ItemStoreDatabaseSettings>(builder.Configuration.GetSection("ItemStoreDatabase")); 
 
             builder.Services.AddSingleton<ItemsService>();
 

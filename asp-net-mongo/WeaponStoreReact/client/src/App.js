@@ -1,15 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 import ItemTable from './ItemTable';
 import Banner from './Banner';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 function App() {
 
   return (
     <div className="App">
+      <Banner />
       <ItemTable />
     </div>
   );

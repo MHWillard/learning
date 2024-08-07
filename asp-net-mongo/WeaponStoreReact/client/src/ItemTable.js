@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function ItemTable() {
-    const [item, setItem] = useState([]);
+    //const [item, setItem] = useState([]);
     const [allItem, setAllItem] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('https://localhost:7053/api/Items/allitems/'); //.net backend
-            console.log(response.data);
+            const response = await axios.get('https://weaponstoreapi.azurewebsites.net/api/allitems/'); //.net backend
             setAllItem(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);
