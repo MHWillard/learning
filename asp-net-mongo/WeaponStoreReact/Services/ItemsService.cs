@@ -11,23 +11,28 @@ namespace WeaponStoreAPI.Services
     public class ItemsService
     {
         private readonly IMongoCollection<Item> _itemsCollection;
-        private IConfiguration _configuration;
-        private readonly string? _key;
+        //private IConfiguration _configuration;
+        private readonly ItemStoreDatabaseSettings _databaseSettings;
 
         //set up mongo client and database and initial collection.
         public ItemsService(IOptions<ItemStoreDatabaseSettings> itemStoreDatabaseSettings)
+        //public ItemsService(IConfiguration configuration)
         {
-            var mClient = new MongoClient(itemStoreDatabaseSettings.Value.ConnectionString);
-            var mDatabase = mClient.GetDatabase("ItemsStore");
+            //_configuration = configuration;
+            _databaseSettings = itemStoreDatabaseSettings.Value;
+            string connect_string = _databaseSettings.ConnectionString;
+            var mClient = new MongoClient(connect_string);
+            var mDatabase = mClient.GetDatabase(_databaseSettings.DatabaseName);
+            _itemsCollection = mDatabase.GetCollection<Item>(_databaseSettings.ItemsCollectionName);
 
-            /*
+            
             List<string> databases = mClient.ListDatabaseNames().ToList();
 
             foreach (string database in databases)
             {
                 Console.WriteLine(database);
             }
-            */
+            
             //string mongoConnect = Environment.GetEnvironmentVariable("MONGO_CONNECT");
         }
 

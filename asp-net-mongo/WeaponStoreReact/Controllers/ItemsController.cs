@@ -56,7 +56,7 @@ namespace WeaponStoreAPI.Controllers
         //public async Task<ActionResult<List<Item>>> GetAll()
         public async Task<ActionResult<List<Item>>> GetAll()
         {
-            //var items = await _itemsService.GetAsync();
+            var items = await _itemsService.GetAsync();
 
             //make list of Item
             //get all item from _itemsService.GetAsync();
