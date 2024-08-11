@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj": {}
+    "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj": {
+    "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj",
-        "packagesPath": "C:\\Users\\mwillard\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\obj\\",
+        "projectPath": "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\Gatack\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mwillard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Gatack\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj": {
-                "projectPath": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj"
+              "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj": {
+                "projectPath": "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj"
               }
             }
           }
@@ -89,25 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj": {
+    "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj",
         "projectName": "WeaponStoreAPI",
-        "projectPath": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj",
-        "packagesPath": "C:\\Users\\mwillard\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Coding\\learning\\asp-net-mongo\\WeaponStoreReact\\obj\\",
+        "projectPath": "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\WeaponStoreAPI.csproj",
+        "packagesPath": "C:\\Users\\Gatack\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gatack\\Desktop\\Coding\\Coding Projects\\learning\\asp-net-mongo\\WeaponStoreReact\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mwillard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Gatack\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,7 +157,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
