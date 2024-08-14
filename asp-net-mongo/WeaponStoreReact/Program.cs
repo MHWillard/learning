@@ -34,20 +34,27 @@ namespace WeaponStoreAPI
             builder.Services.AddSwaggerGen();
 
             //add the database services to the builder, get the config and add that too.
-            //builder.Services.Configure<ItemStoreDatabaseSettings>(builder.Configuration.GetSection("ItemStoreDatabase")); 
-            builder.Services.Configure<ItemStoreDatabaseSettings>(builder.Configuration.GetSection("ItemStoreDatabase"));
+            if (builder.Environment.IsProduction())
+            {
 
-            builder.Services.AddSingleton<ItemsService>();
+            }
+            else
+            {
+                builder.Services.Configure<ItemStoreDatabaseSettings>(builder.Configuration.GetSection("ItemStoreDatabase"));
+
+                builder.Services.AddSingleton<ItemsService>();
+            }
+
 
             var app = builder.Build();
 
             app.UseSwagger();
 
             // Configure the HTTP request pipeline.
-            //if (app.Environment.IsDevelopment())
-            //{
+            if (app.Environment.IsDevelopment())
+            {
                 app.UseSwaggerUI();
-            //}
+            }
 
             app.UseHttpsRedirection();
 
