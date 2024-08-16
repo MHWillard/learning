@@ -22,6 +22,13 @@ namespace WeaponStoreAPI.Services
             _itemsCollection = mDatabase.GetCollection<Item>(_databaseSettings.ItemsCollectionName);
         }
 
+        public ItemsService(string connString)
+        {
+            var mClient = new MongoClient(connString);
+            var mDatabase = mClient.GetDatabase("ItemStore");
+            _itemsCollection = mDatabase.GetCollection<Item>("Items");
+        }
+
         //CRUD operations.
         //public async Task<List<Item>> GetAsync() =>
         //await _itemsCollection.Find(_ => true).ToListAsync();

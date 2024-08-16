@@ -33,17 +33,12 @@ namespace WeaponStoreAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            var connString = Environment.GetEnvironmentVariable("ConnectionString");
+
             //add the database services to the builder, get the config and add that too.
-            if (builder.Environment.IsProduction())
-            {
-
-            }
-            else
-            {
-                builder.Services.Configure<ItemStoreDatabaseSettings>(builder.Configuration.GetSection("ItemStoreDatabase"));
-
-                builder.Services.AddSingleton<ItemsService>();
-            }
+            builder.Services.Configure<ItemStoreDatabaseSettings>(builder.Configuration.GetSection("ItemStoreDatabase"));
+            //builder.Services.Configure(connString);
+            builder.Services.AddSingleton<ItemsService>();
 
 
             var app = builder.Build();
