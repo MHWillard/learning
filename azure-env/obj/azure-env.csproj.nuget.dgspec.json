@@ -52,6 +52,14 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "Microsoft.Configuration.ConfigurationBuilders.AzureAppConfiguration": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Configuration.ConfigurationBuilders.Environment": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("azure-env")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6e22c19b55883b4cc88aea4a98649b7129d1c19")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("azure-env")]
 [assembly: System.Reflection.AssemblyTitleAttribute("azure-env")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
