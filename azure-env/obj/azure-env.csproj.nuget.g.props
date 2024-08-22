@@ -28,5 +28,6 @@
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\mwillard\.nuget\packages\microsoft.entityframeworkcore.tools\8.0.8</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgMicrosoft_Configuration_ConfigurationBuilders_Environment Condition=" '$(PkgMicrosoft_Configuration_ConfigurationBuilders_Environment)' == '' ">C:\Users\mwillard\.nuget\packages\microsoft.configuration.configurationbuilders.environment\3.0.0</PkgMicrosoft_Configuration_ConfigurationBuilders_Environment>
     <PkgMicrosoft_Configuration_ConfigurationBuilders_AzureAppConfiguration Condition=" '$(PkgMicrosoft_Configuration_ConfigurationBuilders_AzureAppConfiguration)' == '' ">C:\Users\mwillard\.nuget\packages\microsoft.configuration.configurationbuilders.azureappconfiguration\3.0.0</PkgMicrosoft_Configuration_ConfigurationBuilders_AzureAppConfiguration>
+    <PkgMicrosoft_Configuration_ConfigurationBuilders_Azure Condition=" '$(PkgMicrosoft_Configuration_ConfigurationBuilders_Azure)' == '' ">C:\Users\mwillard\.nuget\packages\microsoft.configuration.configurationbuilders.azure\3.0.0</PkgMicrosoft_Configuration_ConfigurationBuilders_Azure>
   </PropertyGroup>
 </Project>
