@@ -18,6 +18,10 @@ namespace azure_env.Controllers
         public EnvClassesController(EnvContext context)
         {
             _context = context;
+            var appsettings = ConfigurationManager.AppSettings;
+            var local = appsettings["GOOGLE_APPLICATION_CREDENTIALS"];
+            var production = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
+
         }
 
         // GET: api/EnvClasses

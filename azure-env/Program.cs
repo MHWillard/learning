@@ -8,6 +8,8 @@ namespace azure_env
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            ConfigurationManager configuration = builder.Configuration;
+            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
             // Add services to the container.
 

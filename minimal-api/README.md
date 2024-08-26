@@ -1,0 +1,3 @@
+# Learning Path - Create web apps and services with ASP.NET Core, minimal API, and .NET
+
+Exercises based on the [Create web apps and services with ASP.NET Core, minimal API, and .NET](https://learn.microsoft.com/en-us/training/paths/aspnet-core-minimal-api/) Microsoft learning path. Some of the exercise content might be modified depending on my own interests and thoughts in applying to other projects.

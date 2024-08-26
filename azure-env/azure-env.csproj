@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
     <RootNamespace>azure_env</RootNamespace>
+    <UserSecretsId>d0ad1458-b79e-42e8-b1a5-f29934cfdc32</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
