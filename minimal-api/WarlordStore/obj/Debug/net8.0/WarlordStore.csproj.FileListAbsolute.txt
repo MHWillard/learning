@@ -31,3 +31,6 @@ C:\Work\Coding\learning\minimal-api\WarlordStore\bin\Debug\net8.0\Swashbuckle.As
 C:\Work\Coding\learning\minimal-api\WarlordStore\obj\Debug\net8.0\WarlordStore.csproj.AssemblyReference.cache
 C:\Work\Coding\learning\minimal-api\WarlordStore\obj\Debug\net8.0\WarlordStore.MvcApplicationPartsAssemblyInfo.cs
 C:\Work\Coding\learning\minimal-api\WarlordStore\obj\Debug\net8.0\WarlordStore.csproj.CopyComplete
+C:\Work\Coding\learning\minimal-api\WarlordStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Work\Coding\learning\minimal-api\WarlordStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Work\Coding\learning\minimal-api\WarlordStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
