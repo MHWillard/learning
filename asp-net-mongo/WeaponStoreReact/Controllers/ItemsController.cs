@@ -53,7 +53,6 @@ namespace WeaponStoreAPI.Controllers
 
 
         [HttpGet("allitems")]
-        //public async Task<ActionResult<List<Item>>> GetAll()
         public async Task<ActionResult<List<Item>>> GetAll()
         {
             var items = await _itemsService.GetAsync();
